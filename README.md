@@ -69,6 +69,35 @@ data-warehouse-project/
 - **Notion** – Documentation
 - **Git** – Version control
 
+# 🚀 Getting Started
+
+Follow these steps to set up and run the project locally:
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/sibashish9040/SQL-data-warehouse-project.git
+cd SQL-data-warehouse-project
+```
+- Install and configure a SQL Server instance.
+- Use any SQL client, I have used SQL Server Management Studio (SSMS) to run SQL scripts.
+```
+# Bronze Layer
+#run the ddl_bronze.sql file first, then modify the load_bronze file according to your file location
+#run the load_bronze.sql file
+scripts/bronze/*.sql
+
+# Silver Layer
+# run the ddl_silver.sql and then load_silver.sql
+scripts/silver/*.sql
+
+# Gold Layer
+# run the gold_views.sql for the final view creation 
+scripts/gold/*.sql
+```
+
+----
+
 # 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
